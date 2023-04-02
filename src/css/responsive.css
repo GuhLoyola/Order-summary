@@ -7,6 +7,14 @@
         padding: 20px;
     }
 
+    .card-text .title {
+        font-size: 25px;
+    }
+
+    .card-text .description {
+        font-size: 15px;
+    }
+
     .plan-info::before {
         margin-right: 10px;
     }
