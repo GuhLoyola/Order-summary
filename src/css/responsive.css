@@ -1,0 +1,13 @@
+@media(max-width:425px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .card-text {
+        padding: 20px;
+    }
+
+    .plan-info::before {
+        margin-right: 10px;
+    }
+}

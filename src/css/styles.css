@@ -1,0 +1,111 @@
+body {
+    background: url(../images/pattern-background-desktop.svg) 0 0 no-repeat;
+    background-color: hsla(225, 100%, 94%,0.9);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: 100%;
+    display: inherit;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.title {
+    font-weight: 900;
+    color: var(--main-heading);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-weight: 500;
+    color: var(--txt-color);
+    margin-bottom: 20px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.plan-info {
+    display: flex;
+}
+
+
+.plan-info::before {
+    content: url(../images/icon-music.svg);
+    margin-right: 20px;
+}
+
+.plan-info .plan-name {
+    color: var(--main-heading);
+    font-weight: 900;
+}
+
+.plan-info .plan-price {
+    color: var(--txt-color);
+    font-weight: 700;
+}
+
+.plan a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 62%);
+}
+
+.btn-proceed {
+    padding: 10px 20px;
+    background-color: var(--btn-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-proceed:hover {
+    background-color: hsl(245, 75%, 62%);
+}
+
+.cancel {
+    font-weight: 700;
+    color: var(--txt-color);
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.cancel:hover {
+    color: var(--main-heading);
+}
